@@ -1,0 +1,80 @@
+.custom-card {
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    background-color: #e9ecef; /* Màu nền xám nhạt cho phần Lập phiếu thuê */
+    border: 2px solid #007bff; /* Viền màu xanh lam */
+    color: #495057; /* Màu chữ tối */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+/* header */
+.navbar-custom {
+      background-color: #DEB887; /* Màu be */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #000000;
+    }
+
+    .navbar-custom .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .btn-custom {
+      background-color: #3e5c97; /* Xanh tối */
+      color: #ffffff;
+      border-radius: 5px;
+    }
+
+    .btn-custom:hover {
+      background-color: #2c487a;
+    }
+
+    .flag-icon {
+      width: 25px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link.active {
+  font-weight: bold; /* Làm nổi bật liên kết */
+  color: #3e5c97; /* Màu xanh tối cho liên kết active */
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+  color: #2c487a; /* Màu xanh đậm khi hover */
+}
+
+
+.disabled-button {
+    pointer-events: none;  /* Ngừng nhận sự kiện click */
+    opacity: 0.5;  /* Làm mờ nút */
+}
