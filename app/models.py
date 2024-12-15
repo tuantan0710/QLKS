@@ -62,6 +62,7 @@ class Reservation(db.Model):
     bill = relationship('Bill', backref='reservation', uselist=False)
 
 class Comment(db.Model):
+    id = Column(Integer, primary_key=True, autoincrement=True)
     content = Column(String(255), nullable=False)
     room_type_id = Column(Integer, ForeignKey(RoomType.id), nullable=False)
     user_id = Column(Integer, ForeignKey(User.id), nullable=False)
